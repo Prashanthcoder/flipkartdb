@@ -12,10 +12,13 @@ public class Flipkart {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/flipkartDb", "root", "root");
 		Statement s = conn.createStatement();
-//		s.execute("create database flipkartDb");
-//		System.out.println("database created successfully!");
+		s.execute("create database flipkartDb");
+		System.out.println("database created successfully!");
 		s.execute("create table FlipkartProducts(cid int primary key, cname varchar(40) not null, product varchar(40))");
 		System.out.println("table created successfully");
+		
+		
+		
 	}
 
 }
