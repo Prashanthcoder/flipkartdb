@@ -17,6 +17,7 @@ public class Fetch {
 		int id4 = sc.nextInt();
 		p4.setInt(1, id4);
 		ResultSet r = p4.executeQuery();
+		
 		r.next();
 		System.out.println(r.getInt(1)+" "+r.getString(2)+" "+r.getString(3));
 	}
